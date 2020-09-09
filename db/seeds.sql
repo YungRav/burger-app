@@ -1,6 +1,7 @@
-INSERT INTO burgers (name) VALUES ('Cheeseburger');
-INSERT INTO burgers (name) VALUES ('The Rustico');
-INSERT INTO burgers (name, devoured) VALUES ('Bacon Cheeseburger', true);
-INSERT INTO burgers (name, devoured) VALUES ('Impossible Burger', true);
-INSERT INTO burgers (name, devoured) VALUES ('Whopper', true);
-INSERT INTO burgers (name) VALUES ('Big Mac');
+USE burger_db;
+
+
+INSERT INTO burgers (burger_name, devoured, dt)
+VALUES ('Big Mac', false, CURRENT_TIMESTAMP),
+('The Rustico', false, CURRENT_TIMESTAMP),
+('Royale with Cheese', false, CURRENT_TIMESTAMP);
